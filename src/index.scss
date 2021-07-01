@@ -1,0 +1,85 @@
+body {
+  background-color: lavender;
+}
+
+h1 {
+  text-align: center;
+  font-size: clamp(1.5rem, 3vw, 3rem);
+}
+.calculatorbox {
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  width: clamp(280px, 30%, 500px);
+  height: clamp(420px, 70vh, 500px);
+}
+
+#clear {
+  grid-column: 1 / 5;
+}
+#display {
+  border: solid black 1px;
+  grid-column: 1 / 5;
+  background-color: grey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 2rem;
+  width: 100%;
+}
+
+#one,
+#two,
+#three,
+#four,
+#five,
+#six,
+#seven,
+#eight,
+#nine,
+#zero {
+  background-color: #4caf50;
+  border: solid black 1px;
+  color: white;
+  font-size: 2rem;
+}
+
+#multiply,
+#divide,
+#subtract,
+#add,
+#decimal,
+#equals {
+  background-color: #1461b8;
+  border: solid black 1px;
+  color: white;
+  font-size: 2rem;
+}
+
+#one:active,
+#two:active,
+#three:active,
+#four:active,
+#five:active,
+#six:active,
+#seven:active,
+#eight:active,
+#nine:active,
+#zero:active,
+#multiply:active,
+#divide:active,
+#subtract:active,
+#add:active,
+#decimal:active,
+#equals:active {
+  background-color: #fb8604;
+}
+
+#clear {
+  background-color: snow;
+  border: solid black 1px;
+  color: black;
+  font-size: 2rem;
+}
